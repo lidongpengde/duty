@@ -1,0 +1,27 @@
+[
+{"qps": ["1.7"], "average": ["69.8"], "total": ["6,127"], "line": ["56.6"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0ISendSmsFacade.sendSms"]},
+{"qps": ["0.5"], "average": ["129.8"], "total": ["454"], "line": ["176.7"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserRegisterFacade.registerUnifyUser"]},
+{"qps": ["0.0"], "average": ["171.8"], "total": ["40"], "line": ["178.5"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserRegisterFacade.regUser"]},
+{"qps": ["15.8"], "average": ["21.1"], "total": ["14,364"], "line": ["26.6"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserLoginFacade.doLogin"]},
+{"qps": ["2.0"], "average": ["23.0"], "total": ["1,789"], "line": ["57.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0ISNSLoginFacade.doSNSLogin"]},
+{"qps": ["439.9"], "average": ["1.9"], "total": ["405,188"], "line": ["2.1"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserInfoFacade.getItemById"]},
+{"qps": ["142.4"], "average": ["3.2"], "total": ["131,836"], "line": ["4.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserSsoFacade.getUserByIdFromCache"]},
+{"qps": ["17.1"], "average": ["3.5"], "total": ["15,877"], "line": ["5.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserSsoFacade.saveUserToCacheFonInner"]},
+{"qps": ["2.4"], "average": ["24.0"], "total": ["2,268"], "line": ["35.9"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IGomedoChangeFacade.changeGomedo"]},
+{"qps": ["17.6"], "average": ["1.4"], "total": ["16,468"], "line": ["1.3"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IGomedoQueryFacade.getUsableGomedo4Shopping"]},
+{"qps": ["24.2"], "average": ["2.5"], "total": ["22,777"], "line": ["3.5"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserAddressFacade.getSecondaryAddress"]},
+{"qps": ["74.3"], "average": ["2.0"], "total": ["70,443"], "line": ["2.2"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserBaseInfoFacade.getGomeProfileUserInfoById"]}
+][
+{"qps": ["1.7"], "average": ["69.8"], "total": ["6,127"], "line": ["56.6"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0ISendSmsFacade.sendSms"]},
+{"qps": ["0.5"], "average": ["126.6"], "total": ["1,297"], "line": ["177.1"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserRegisterFacade.registerUnifyUser"]},
+{"qps": ["0.0"], "average": ["169.7"], "total": ["81"], "line": ["185.9"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserRegisterFacade.regUser"]},
+{"qps": ["10.8"], "average": ["20.8"], "total": ["29,107"], "line": ["27.7"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserLoginFacade.doLogin"]},
+{"qps": ["1.6"], "average": ["23.8"], "total": ["4,433"], "line": ["59.8"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0ISNSLoginFacade.doSNSLogin"]},
+{"qps": ["380.6"], "average": ["1.9"], "total": ["1,026,414"], "line": ["2.1"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserInfoFacade.getItemById"]},
+{"qps": ["123.5"], "average": ["3.2"], "total": ["333,228"], "line": ["4.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserSsoFacade.getUserByIdFromCache"]},
+{"qps": ["12.3"], "average": ["3.7"], "total": ["33,083"], "line": ["5.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserSsoFacade.saveUserToCacheFonInner"]},
+{"qps": ["2.8"], "average": ["22.3"], "total": ["7,701"], "line": ["34.3"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IGomedoChangeFacade.changeGomedo"]},
+{"qps": ["14.5"], "average": ["1.4"], "total": ["39,298"], "line": ["1.0"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IGomedoQueryFacade.getUsableGomedo4Shopping"]},
+{"qps": ["19.4"], "average": ["2.7"], "total": ["52,660"], "line": ["3.6"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserAddressFacade.getSecondaryAddress"]},
+{"qps": ["64.5"], "average": ["2.0"], "total": ["175,369"], "line": ["2.2"], "interfaceName": ["\r\n\t\t\t\t\t\t\t", " \r\n\t\t\t\t\t\t\t\u00a0\u00a0IUserBaseInfoFacade.getGomeProfileUserInfoById"]}
+]
