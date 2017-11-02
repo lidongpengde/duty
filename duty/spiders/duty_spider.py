@@ -9,7 +9,7 @@ class DmozSpider(scrapy.Spider):
     name = "dmoz"
     allowed_domains = ["dmoz.org"]
     start_urls = [
-        "http://10.58.52.202:8080/cat/r/t?date=2017061709&ip=All&step=-1&ip=All&queryname=sendSms&domain=loom&type=PigeonService",
+        "http://10.58.52.202:8080/cat/r/t?domain=loom&date=2017103121&ip=All&type=PigeonService",
 
         "http://10.58.52.202:8080/cat/r/t?ip=All&queryname=registerUnifyUser&domain=userCenter&type=PigeonService",
         "http://10.58.52.202:8080/cat/r/t?ip=All&queryname=regUser&domain=userCenter&type=PigeonService",
@@ -26,14 +26,21 @@ class DmozSpider(scrapy.Spider):
         "http://10.58.52.202:8080/cat/r/t?ip=All&queryname=getSecondaryAddress&domain=userBase&type=PigeonService",
         "http://10.58.52.202:8080/cat/r/t?ip=All&queryname=getGomeProfileUserInfoById&domain=userBase&type=PigeonService"
     ]
-    def parse(self, response):
+    def parse(self, response): 
         for sel in response.xpath('//div[re:test(@class, "report")]/table[re:test(@class, "table")]'):
             file_name='D:\\example.xls'
             r_xls = ExcelRead.open_workbook(file_name) 
             r_sheet = r_xls.sheet_by_index(0) 
             rows = r_sheet.nrows 
             item = DutyItem()
-            if rows==5:
+            self.log('A response from %s just arrived!' % response.url)
+            if response.url=="http://10.58.52.202:8080/cat/r/t?domain=loom&date=2017103121&ip=All&type=PigeonService":
+                item['interfaceName'] = sel.xpath('tr[re:test(@class, "right")][5]/td[1]/text()').extract()
+                item['total'] = sel.xpath('tr[re:test(@class, "right")][5]/td[2]/text()').extract()
+                item['average'] = sel.xpath('tr[re:test(@class, "right")][5]/td[8]/text()').extract()
+                item['line'] = sel.xpath('tr[re:test(@class, "right")][5]/td[9]/text()').extract()
+                item['qps'] = sel.xpath('tr[re:test(@class, "right")][5]/td[12]/text()').extract()
+            elif response.url=="http://10.58.52.202:8080/cat/r/t?ip=All&queryname=getItemById&domain=userCenter&type=PigeonService":
                 item['interfaceName'] = sel.xpath('tr[re:test(@class, "right")][3]/td[1]/text()').extract()
                 item['total'] = sel.xpath('tr[re:test(@class, "right")][3]/td[2]/text()').extract()
                 item['average'] = sel.xpath('tr[re:test(@class, "right")][3]/td[8]/text()').extract()
@@ -52,5 +59,5 @@ class DmozSpider(scrapy.Spider):
             sheet_write.write(rows, 2, item['average'])
             sheet_write.write(rows, 3, item['line'])
             sheet_write.write(rows, 4, item['qps'])
-            w_xls.save(file_name); 
+            w_xls.save(file_name);
             yield item
